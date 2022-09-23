@@ -1,5 +1,10 @@
-function HomePage() {
-  return <div>Welcome to Next.js!</div>
-}
+import React from 'react';
+import Header from '@components/Header';
 
-export default HomePage
+export default function Home() {
+  return (
+    <>
+      <Header />
+    </>
+  )
+}
