@@ -24,9 +24,9 @@ const ProductItem = ({ product }) => {
 				</div>
 				<IconButton color="primary" aria-label="cart" component="label" onClick={() => handleClick(product)} >
 					{  state.cart.includes(product) ?
-						<Image className={`${styles.disabled} ${styles['add-to-cart-btn']}`} src={addedToCartImage} alt="added to cart" width="40%" height="40%" />
+						<Image className={styles.disabled, styles['add-to-cart-btn']} src={addedToCartImage} alt="added to cart" width="40%" height="40%" />
 						:
-						<Image className={`${styles['add-to-cart-btn']} ${styles.pointer}`} src={addToCartImage} alt="add to cart" width="40%" height="40%" />
+						<Image className={styles['add-to-cart-btn'], styles.pointer} src={addToCartImage} alt="add to cart" width="40%" height="40%" />
 					}
 				</IconButton>
 			</div>

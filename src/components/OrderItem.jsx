@@ -14,11 +14,11 @@ const OrderItem = ({ product }) => {
 	return (
 		<div className={styles.OrderItem}>
 			<figure>
-				<Image src={product?.images[0]} alt={product?.title} width="100%" height="100%" layout="fill" />
+				<Image src={product?.images[0]} alt={product?.title} width="100%" height="100%" layout="intrinsic" />
 			</figure>
 			<p>{product?.title}</p>
 			<p>${product?.price}</p>
-			<Image className={styles.pointer, styles['more-clickable-area']} width="100%" height="100%" layout="fill" src={close} alt="close" onClick={() => handleRemove(product)} />
+			<Image className={styles.pointer, styles['more-clickable-area']} width="20%" height="20%" layout="intrinsic" src={close} alt="close" onClick={() => handleRemove(product)} />
 		</div>
 	);
 };

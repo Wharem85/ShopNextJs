@@ -10,12 +10,14 @@
   bottom: 0;
   border-radius: 6px;
   border: 1px solid $--very-light-pink;
+  z-index: 99;
+  position: fixed;
 }
 .title-container {
   display: flex;
 }
 .MyOrder-container {
-  position: absolute;
+  position: sticky;
   bottom: 0;
   right: 0;
 }
@@ -71,7 +73,7 @@
   background-color: $--hospital-green;
   border-radius: 8px;
   border: none;
-  color: --white;
+  color: $--white;
   width: 100%;
   cursor: pointer;
   font-size: $--md;

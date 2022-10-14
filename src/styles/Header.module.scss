@@ -8,7 +8,8 @@
   position: fixed;
   top: 0;
   background: white;
-  width: calc(100% - 50px);
+  width: calc(102% - 50px);
+  z-index: 99;
 }
 .menu {
   display: none;
